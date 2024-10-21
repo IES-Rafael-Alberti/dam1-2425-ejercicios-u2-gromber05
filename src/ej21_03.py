@@ -20,7 +20,6 @@ def main():
     else:
         print('¡Solo puedes introducir números!')
 
-            
-    
+
 if __name__ == "__main__":
     main()

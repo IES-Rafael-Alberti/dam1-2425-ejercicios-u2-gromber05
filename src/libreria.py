@@ -1,14 +1,18 @@
 
-def pedirnumero2():
+def pedirnumero():
     num = None
     while num == None:
         num = int(input("Introduce un número: "))
     return num
 
-
-def pedirnumero():
+def pedir_otro_numero():
     num = None
-    try:
-        num = int(input("Introduce un número: "))
-    except ValueError:
-        print('')
+    while num == None:
+        num = int(input("Introduce otro número: "))
+    return num
+
+def pedir_num_float():
+    num = None
+    while num == None:
+        num = float(input("Introduce otro número: "))
+    return num
