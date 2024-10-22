@@ -1,11 +1,5 @@
 
-from libreria import pedirnumero
-
-def pedir_edad():
-    num = None
-    while num == None:
-        num = int(input("Introduce tu edad: "))
-    return num
+from libreria import preguntar_edad
 
 def pedir_ingresos():
     num = None
@@ -27,7 +21,7 @@ def comprobar_ingresos(num: int) -> bool:
         return False
 
 def main():
-    edad = pedir_edad()
+    edad = preguntar_edad()
     ingresos = pedir_ingresos()
 
     if comprobar_edad(edad) == True:

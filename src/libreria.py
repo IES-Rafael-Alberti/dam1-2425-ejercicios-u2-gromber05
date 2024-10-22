@@ -16,3 +16,6 @@ def pedir_num_float():
     while num == None:
         num = float(input("Introduce otro número: "))
     return num
+
+def preguntar_edad():
+    return int(input("¿Cuántos años tienes?: "))

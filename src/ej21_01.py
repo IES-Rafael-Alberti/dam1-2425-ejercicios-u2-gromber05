@@ -1,15 +1,13 @@
+from libreria import preguntar_edad
+
 def comprobarEdad(edad) -> int:
     if edad >= 18:
         return True
     else:
         return False
     
-def pedirEdad() -> int:
-    edad = int(input('Introduzca su edad: '))
-    return edad
-
 def main():
-    edad = pedirEdad()
+    edad = preguntar_edad()
     comprobacion = comprobarEdad(edad)
 
     if comprobacion == True:

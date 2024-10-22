@@ -2,8 +2,7 @@
 from libreria import pedirnumero
 
 def par_o_impar(num: int):
-    num = num % 2
-    return num
+    return num % 2
 
 def main():
     num = pedirnumero()
