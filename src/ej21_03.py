@@ -1,5 +1,5 @@
 # ZeroDivisionError
-from libreria import pedirnumero
+from libreria import pedir_numero
     
 def division(num:int , num2:int) -> float:
     return num/num2
@@ -8,8 +8,8 @@ def comprobar_cero(num: int) -> bool:
     return num != 0
     
 def main():
-    num = pedirnumero()
-    num2 = pedirnumero()
+    num = pedir_numero()
+    num2 = pedir_numero()
 
     if (num is not None) and (num2 is not None):
         if not comprobar_cero(num2):
