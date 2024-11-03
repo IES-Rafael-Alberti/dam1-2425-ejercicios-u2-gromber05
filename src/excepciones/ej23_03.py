@@ -8,7 +8,7 @@ def pedir_numero():
                 raise ValueError
 
         except ValueError:
-            print('\n**ERROR**\n El valor introducido solo puede ser un número, además de que tiene que ser igual o mayor a uno')
+            print('\n**ERROR**\n El valor introducido solo puede ser un número, además de que tiene que ser igual o mayor a uno\n')
             num = 0
 
     return num

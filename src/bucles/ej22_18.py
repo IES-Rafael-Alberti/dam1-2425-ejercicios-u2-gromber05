@@ -1,10 +1,18 @@
-from libreria import pedir_numero
+def pedir_numero():
+    try:
+        num = int(input('Introduzca un número: '))
+
+    except ValueError:
+        num = f'\n**ERROR**\n El valor introducido solo puede ser un número\n **ERROR**\n'
+    except:
+        num = f'\n**ERROR**\n Error desconocido \n**ERROR**\n'
+    return num
 
 def comprobar_negativo(num):
     if num == -1:
         return True
     elif num < -1:
-        raise ValueError('**ERROR** No puedes introducir un valor menor a menos uno')
+        print('**ERROR** No puedes introducir un valor menor a menos uno')
     else:
         return False
     

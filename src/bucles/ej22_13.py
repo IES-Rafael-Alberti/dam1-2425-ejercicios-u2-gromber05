@@ -5,10 +5,7 @@ def pedir_palabra():
     return mensaje
 
 def comprobar(mensaje: str):
-    if mensaje.lower() == 'salir':
-        return True
-    else:
-        return False
+    return mensaje.lower() == 'salir'
 
 def main():
     os.system('cls')
