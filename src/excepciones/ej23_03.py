@@ -15,9 +15,10 @@ def pedir_numero():
 
 def bucle(num: int):
     serie = ''
-    for i in range(1, num+1, 2):
+    for i in reversed(range(1, num+1)):
         i = str(i)
         serie += i + ', '
+        
     serie = serie.rstrip(", ") + '.'
 
     return serie
@@ -25,7 +26,7 @@ def bucle(num: int):
 def main():
     num = pedir_numero()
     cadena = bucle(num)
-    print(f'Los años cumplidos: {cadena}')
+    print(f'SERIE: {cadena}')
 
 if __name__ == '__main__':
     main()
