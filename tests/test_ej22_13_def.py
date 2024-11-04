@@ -1,7 +1,7 @@
 import pytest
 from src.bucles.ej22_13 import comprobar
 
-def test_pedir_numero():
+def test_comprobar():
     assert comprobar("SaLIR") == True
     assert comprobar("saliur") == False
     assert comprobar("SALIR") == True
